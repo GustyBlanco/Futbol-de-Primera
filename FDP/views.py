@@ -1,15 +1,19 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+#from django.http import HttpResponse
 # Create your views here.
 
 def inicio(request):
-    return HttpResponse("Inicio")
+    return render(request, 'FDP/inicio.html')
+    #return HttpResponse("Inicio")
 
 def Usuario(request):
-    return HttpResponse("Usuario")
+    return render(request, 'FDP/usuario.html')
+    #return HttpResponse("Usuario")
 
 def Torneo(request):
-    return HttpResponse("Torneo")
+    return render(request, 'FDP/torneo.html')
+    #return HttpResponse("Torneo")
 
 def Equipos(request):
-    return HttpResponse("Equipos")
+    return render(request, 'FDP/equipos.html')
+    #return HttpResponse("Equipos")
